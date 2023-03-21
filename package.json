@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "five-server": "^0.1.9",
+    "three": "^0.150.1"
+  }
+}

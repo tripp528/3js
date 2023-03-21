@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- style -->
+    <style>
+      html, body {
+        position: fixed;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+      }
+      canvas {
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+
+    <!-- importmap -->
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap"> { "imports": {
+      "three": "./node_modules/three/build/three.module.js",
+      "three-orbitcontrols": "./node_modules/three/examples/jsm/controls/OrbitControls.js"
+    }}</script>
+
+  </head>
+  <body>
+
+    <!-- canvas -->
+    <canvas id="world" ></canvas>
+    
+    <!-- script -->
+    <script type="module">
+      import main from './main.js'
+      main()
+    </script>
+
+  </body>
+</html>
